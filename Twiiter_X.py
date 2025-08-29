@@ -59,8 +59,8 @@ class TwitterSeleniumScraper:
         self.driver.quit()
 
 # Configuration
-TWITTER_USERNAME = "aka_baye_tapha"
-TWITTER_PASSWORD = "Mbacke@3545"
+TWITTER_USERNAME = "Mail ou pseudo"
+TWITTER_PASSWORD = "Mdp ici"
 
 # Utilisation (déconseillé à cause des risques de blocage)
 scraper = TwitterSeleniumScraper(TWITTER_USERNAME, TWITTER_PASSWORD)
@@ -75,4 +75,5 @@ with open("resultat_twitter.txt", "w", encoding="utf-8") as f:
         f.write(f"Username: {user['username']}\n")
         f.write(f"Description: {user['description']}\n")
         f.write("-" * 30 + "\n")    
+
 print("Résultats enregistrés dans resultat_twitter.txt")
